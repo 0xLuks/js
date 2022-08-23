@@ -8,7 +8,7 @@ Ex: node redir.js -r 127.0.0.1:3000/api/.....
 
 TO-DO:
 
-/* Commander new syntax
+=> Commander new syntax
 const { program } = require('commander');
 program.version('0.0.1');
 
