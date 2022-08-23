@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+/* 
+At the moment, the option for the "-p" port does not work
+It necessary to specify the port manuelly in the URL
+
+Ex: node redir.js -r 127.0.0.1:3000/api/.....   
+*/
+
 const express = require('express');
 const { program } = require('commander');
 const app = express();
