@@ -8,8 +8,8 @@ const program = (require('commander'))
 var server = http.createServer(function (req, res) {
     res.writeHead(302, {'Location': program.destinationUrl + req.url});
     res.end;
-    console.log('Starting server on port: ' + program.port);
-    console.log('Traffic redirected to ' + program.destinationUrl)
+    document.write('Starting server on port: ' + program.port);
+    document.write('Traffic redirected to: ' + program.destinationUrl)
 });
 
 server.listen(program.port);
