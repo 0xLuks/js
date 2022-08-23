@@ -8,7 +8,7 @@ const port = 3000;
 program 
     .description('Redirects all HTTP traffic locally')
     .option('-r, --destinationUrl <path>', 'the url that will be redirected')
-    .option('-p, --port <port>, "specify the port of the url", Number, 3000');
+    .option('-p, --port <port>', 'specify the port of the url');
 
 program.parse();
 
