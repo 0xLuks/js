@@ -4,4 +4,4 @@ A small nodeJS server that redirects all traffic locally
 
 ## Usage
 
-![](https://github.com/0xLuks/projects/blob/main/JS/HTTP_redirect_server/redirect.png)
+![](https://github.com/0xLuks/projects/blob/main/JS/HTTP_redirect_server/redir.png)
