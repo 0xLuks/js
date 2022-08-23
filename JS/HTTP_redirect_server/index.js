@@ -1,15 +1,15 @@
-const http = require('http');
-const program = (require('commander'))
-    .description('Redirects all HTTP traffic locally')
-    .option('-r, --destinationUrl <path>', 'the url that will be redirected')
-    .option('-p, --port <port>, "specify the port of the url", Number, 3000')
-    .parse(process.argv);
+#!/usr/bin/env node
 
-var server = http.createServer(function (req, res) {
-    res.writeHead(302, {'Location': program.destinationUrl + req.url});
-    res.end;
-    document.write('Starting server on port: ' + program.port);
-    document.write('Traffic redirected to: ' + program.destinationUrl)
+const express = require('express');
+const app = express();
+const port = 3000;
+const host = "127.0.0.1:3000/"
+
+app.get("/", (req,res) => {
+	res.redirect(302, `http://${host}:${port}`);
 });
 
-server.listen(program.port);
+app.listen(port, () => {
+	console.log(`Listening on port 80`);
+    app.listen(80);
+});
